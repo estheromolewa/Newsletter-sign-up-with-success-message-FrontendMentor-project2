@@ -1,0 +1,152 @@
+.body{
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+:root{
+    font-family: 'Roboto', sans-serif;
+    --bg--color: hsl(235, 18%, 26%);
+    --font--wstay--updated: 700
+  
+}
+#form__purple__bg{
+    background-color:var(--bg--color);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  
+}
+
+#form__plus__image-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 2%;
+    background-color:hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+}
+
+form{
+    flex: 1;
+    margin: 0px 15px 0 10px;
+ 
+    /* flex-wrap: wrap; */
+  
+    
+}
+
+.image__wrap{
+    flex: 1 ;
+    margin: 0px 10px 0 15px;
+
+    /* flex-wrap: wrap; */
+  
+
+   
+
+}
+
+form #text__wrap{
+   
+    margin-top: 21%;
+   
+    
+}
+
+
+.image__wrap .signup__form__image{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+
+    /* i figured when i used url for the images it was not responsive and it did not contain the entire div */
+    /* content: url('assets/images/illustration-sign-up-desktop.svg'); */
+}
+
+@media(max-width: 375px){
+
+    .form__purple__bg{
+     background-color: transparent;
+     margin: 0px;
+    }
+
+    #form__plus__image-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+      
+
+    }
+    .image__wrap .signup__form__image{
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+        margin: 0px;
+      
+    }
+    #text__wrap{
+        margin-top: 0rem;
+        background-color: azure;
+    }
+
+
+}
+
+
+h1{
+    font-size:3em ;
+    font-stretch: expanded;
+    font-weight: var(--font--wstay--updated);
+    color:var(--bg--color) ;
+    
+} 
+
+
+p{
+    color: hsl(234, 29%, 20%) ;
+    font-weight:400;
+    font-size: 1.2em;
+ 
+}
+
+p.mark{
+    font-size: 1rem;
+    color: hsl(234, 29%, 20%);
+    
+}
+
+#text__wrap .mark__img{
+    padding-right: 1.25%;
+}
+
+form #text__wrap .email__wrap label{
+    color:  hsl(234, 29%, 20%);
+    font-weight: 700;
+    display: block;
+    margin: 15% 0 4% 0  ;
+
+}
+
+form #text__wrap .email__wrap input{
+    display: block;
+    color: hsl(231, 7%, 60%);
+    padding: 3.25% 25.5% 3.25% 25.5%;
+    border-radius: 8px;
+    margin-bottom: 8%;
+
+}
+
+form #text__wrap .btn{
+    padding: 3.25% 20.5% 3.25% 20.25% ;
+    background-color:  hsl(234, 29%, 20%);
+    color:  hsl(0, 0%, 100%);
+    border-radius: 8px;
+} 
