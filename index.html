@@ -18,7 +18,7 @@
 
   <div id="form__purple__bg">
     <div id="form__plus__image-wrap">
-      <form >
+      <form id="formPage">
         <div id="text__wrap">
           <h1>Stay updated!</h1>
           <p id="product__managers">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -31,22 +31,38 @@
           </div>
   
           <div class="email__wrap">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="email@company.com">
+            <label for="email" id="label">Email address</label>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required>
           </div>
 
-          <button class="btn">Subscribe to monthly newsletter</button>
+          <div>
+            <button id="btn" type="submit" onclick="switchWrap(event)">Subscribe to monthly newsletter</button>
+          </div>
+          
         </div>
+
        
       </form>
 
 
       <div class="image__wrap">
         <img src="assets/images/illustration-sign-up-desktop.svg" class="signup__form__image" alt="responsive image">
-        <!-- <img src="assets/images/illustration-sign-up-mobile.svg"> -->
-
       </div>
     </div>
+
+    <div id="confirmation__div">
+      <div class="confirmation">
+        <img src="assets/images/icon-success.svg" class="success__icon">
+        <h1 class="thanks">Thanks for subscribing</h1>
+         <p class="confirm__email">A confirmation email has been sent to <span id="company-email"></span>. Please open it and click the button inside to confirm your subscription</p>
+        
+        <button id="confirm__btn"  type="submit" onclick="submitForm()" >Dimiss mesage</button>
+       
+    </div>
+
+    </div>
   </div>
+
+<script src="script.js"></script>
 </body>
 </html>
